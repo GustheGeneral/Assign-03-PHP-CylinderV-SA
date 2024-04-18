@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <meta author="Gustav Ihlenfeld">
-  <title>V and & SA of a Cylinder</title>
+  <title>Volume and Surface Area of a Cylinder</title>
   <meta class="ICD2O - Technology and Innovations">
   <!--CSS-->
   <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -19,21 +19,24 @@
 
 <body>
   <!--Header-->
-  <h1>Volume and Surface Area, with PHP</h1>
-  <img src="./images/cylinder.jpg" alt="cylinder" style="float: right; margin: 0 10px;">
+  <h1>Volume and Surface Area of a Cylinder, with PHP</h1>
+  <img src="./images/formula.png" alt="cylinder" style="float: right; margin: 0 10px;">
 
   <p></p>
   <p><i><b>Enter the value below in the box to calculate the Volume and Surface Area of a Cylinder<b></i></p>
 
-  <!-- Input boxes for side A, side B, and height -->
+  <!-- Input boxes for radius and height -->
   <form action="./result.php" method="post" target="results">
-    <label for="farenheit">Farenheit:</label>
-    <input type="number" id="farenheit" name="farenheit" placeholder="Farenheit" step="0.01" required>">
-    <br></br>
-    <!--Function-->
-    <button type="submit">Calculate Celsius</button>
+    <label for="radius">Radius:</label>
+    <input type="number" step="any" id="radius" name="radius" required>
+    <br><br>
+    <label for="height">Height:</label>
+    <input type="number" step="any" id="height" name="height" required>
+    <br><br>
+    <!-- Submit button -->
+    <button type="submit">Calculate Volume and Surface Area</button>
   </form>
-  <p id="output"></p>
+  <!-- Output iframe -->
   <iframe name="results" id="results" src="result.php"></iframe>
 </body>
 </html>
